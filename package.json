@@ -1,6 +1,6 @@
 {
   "name": "cover-background",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Cover Background Brick Component",
   "main": "index.js",
   "scripts": {
