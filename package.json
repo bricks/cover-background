@@ -1,0 +1,23 @@
+{
+  "name": "cover-background",
+  "version": "0.0.0",
+  "description": "Cover Background Brick Component",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "brick",
+    "cover",
+    "background"
+  ],
+  "repository": {
+    "url": "git@github.com:bricks/cover-background.git",
+    "type": "git"
+  },
+  "author": "azer",
+  "license": "BSD",
+  "dependencies": {
+    "brick": "0.0.x"
+  }
+}
