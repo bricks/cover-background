@@ -10,10 +10,18 @@ $ npm install cover-background
 
 ## Usage
 
+Mix it to your brick:
+
 ```js
+var Brick = require('brick')
 var Cover = require('cover-background')
 
-var cover = Cover.New({
-  url: 'https://farm4.staticflickr.com/3739/13743237213_930036542c_h.jpg'
-})
+module.exports = Brick(Cover, {
+  show: show
+});
+
+function show (foo) {
+  Cover.methods.show(foo, 'http://background.picture.jpg')
+  foo.brick.bind('.cover-content', 'hello world')
+}
 ```

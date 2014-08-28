@@ -1,9 +1,15 @@
-var Brick = require("brick");
+var Brick = require("../../../../../");
 
-module.exports = Brick(function (cover) {
-  if (!cover.url) return;
+module.exports = Brick({
+  show: show
+});
+
+function show (cover, url) {
+  cover.brick.defaultTemplateName = 'cover';
+
+  if (!url) return;
 
   cover.brick.bind('.cover-background', {
-    'style': 'background-image:url(' + cover.url + ')'
+    'style': 'background-image:url(' + url + ')'
   });
-});
+}
