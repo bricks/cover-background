@@ -1,4 +1,4 @@
-var Brick = require("../../../../../");
+var Brick = require("brick");
 
 module.exports = Brick({
   show: show
